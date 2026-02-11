@@ -3,10 +3,10 @@ import React, { useState, useEffect } from 'react';
 
 export default function ImageSlider() {
     const images = [
-        "https://placehold.co/1200x600/1e293b/f59e0b?text=Premium+Catering",
-        "https://placehold.co/1200x600/0f172a/ec4899?text=Authentic+Sweels",
-        "https://placehold.co/1200x600/1e293b/10b981?text=Royal+Weddings",
-        "https://placehold.co/1200x600/0f172a/f59e0b?text=Delicious+Snacks"
+        "https://d3fx71eiz7ljr8.cloudfront.net/uploads/photo/image/2024/w_1500_h_dsc_0359.jpg",
+        "https://www.uaezoom.com/wp-content/uploads/2022/06/%D8%A3%D8%A8%D8%B1%D8%B2-%D8%B4%D8%B1%D9%83%D8%A7%D8%AA-%D8%A8%D9%88%D9%81%D9%8A%D9%87-%D9%85%D9%86%D8%B2%D9%84%D9%8A-%D9%81%D9%8A-%D8%A7%D8%A8%D9%88%D8%B8%D8%A8%D9%8A.jpg",
+        "https://media-api.xogrp.com/images/cd3b17e1-8c56-4987-a150-7ad58fc61bee",
+        "https://images.pexels.com/photos/15062605/pexels-photo-15062605.jpeg?cs=srgb&dl=pexels-angel-obregon-15062605.jpg&fm=jpg"
     ];
 
     const [currentIndex, setCurrentIndex] = useState(0);

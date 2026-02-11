@@ -1,6 +1,6 @@
 :root {
   /* Light Orange Theme */
-  --background: #fff7ed;
+  --background: #ffebd1;
   /* Orange 50 */
   --foreground: #1c1917;
   /* Stone 900 */
@@ -313,12 +313,6 @@ button {
 .desktop-only {
   display: inline;
 }
-
-/* @media (min-width: 768px) {
-  .desktop-only {
-    display: inline;
-  }
-} */
 
 @media (max-width: 768px) {
   .container {
