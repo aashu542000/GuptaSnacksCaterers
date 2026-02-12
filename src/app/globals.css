@@ -36,6 +36,10 @@
   scroll-behavior: smooth;
 }
 
+html {
+  scroll-padding-top: 30px;
+}
+
 body {
   color: var(--foreground);
   background: var(--background);
@@ -215,34 +219,7 @@ button {
   padding: 0.5rem;
 }
 
-/* Animations */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.animate-fade-in {
-  animation: fadeIn 0.8s ease-out forwards;
-}
-
-.delay-1 {
-  animation-delay: 0.1s;
-}
-
-.delay-2 {
-  animation-delay: 0.2s;
-}
-
-.delay-3 {
-  animation-delay: 0.3s;
-}
+/* Animations removed in favor of framer-motion */
 
 /* Hero Specific */
 .hero-bg {

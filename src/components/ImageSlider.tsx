@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
 
 export default function ImageSlider() {
     const images = [
@@ -19,7 +20,14 @@ export default function ImageSlider() {
     }, []);
 
     return (
-        <div className="slider-container" style={{ borderRadius: '1rem', boxShadow: 'var(--glass-shadow)', margin: '2rem 0' }}>
+        <motion.div
+            className="slider-container"
+            style={{ borderRadius: '1rem', boxShadow: 'var(--glass-shadow)', margin: '2rem 0' }}
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+        >
             <div className="slider-track" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
                 {images.map((img, index) => (
                     <div key={index} className="slide">
@@ -45,6 +53,6 @@ export default function ImageSlider() {
                     />
                 ))}
             </div>
-        </div>
+        </motion.div>
     );
 }
